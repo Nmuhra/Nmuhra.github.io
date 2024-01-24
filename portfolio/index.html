@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="" en>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>personal portfolio website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/90ad1fbca2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/Nabegh.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <h1 id="dynamicContent">
+            I'm <span>Nabegh Muhra.</span><br />aspiring Software Developer
+            <br />
+            based in <span1>South Africa.</span1>
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!---------------------about------------------------>
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/aboutme.jpeg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <br />
+            <p>
+              As a BSc Information and Knowledge Systems student at the
+              University of Pretoria, I have consistently demonstrated strong
+              academic achievements.I possess technical proficiency in languages
+              such as C++, C#, JavaScript, among others,all underpinned by a
+              solid understanding of programming principles, algorithms, data
+              structures, and object-oriented programming. With a keen interest
+              in Software Development, I am eager to apply these skills in my
+              future career.
+              <br />
+              <br />
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('Education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <br />
+              <ul>
+                <li>
+                  <span>OOP</span><br />Robust, scalable software solution
+                  implementation
+                </li>
+                <li>
+                  <span>Web Development</span><br />HTML / CSS / JavaScript
+                </li>
+                <li>
+                  <span>Other Programming languages</span
+                  ><br />C++<br />C#<br />Python<br />Java
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Education">
+              <br />
+              <ul>
+                <li>
+                  <span>2018-2022</span><br /><span>High School | </span>North
+                  American International School
+                </li>
+                <li>
+                  <span>2023-present</span><br /><span
+                    >BSc Information & Knowledge Systems |</span
+                  >
+                  University of Pretoria
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---------------------portfolio------------------------>
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div>
+            <i class="fa-brands fa-bitcoin"></i>
+            <h2>Nabecoin</h2>
+            <p>
+              Creating my own crypto token was a standout project that I
+              thoroughly enjoyed. Every step, from using with a Linux machine to
+              minting the token on the Solana blockchain, fascinated me. What
+              added an extra layer of learning was utilizing GitHub to
+              seamlessly integrate the token into the Solana registry. It was a
+              smooth and technically rewarding experience.
+            </p>
+            <a
+              href="https://solscan.io/token/D9bPM4v6M3vn41Mg3Eh9ac2dwiYCM1GGvBLbDvyQdAeh"
+              >Check out Nabecoin</a
+            >
+          </div>
+          <div>
+            <i class="fa-solid fa-play"></i>
+            <h2>Media Player</h2>
+            <p>
+              <A:tel></A:tel> simple yet effective Python script leveraging the
+              power of OpenCV. This project transforms your device into a
+              versatile media player, offering an interactive experience with
+              video files.
+            </p>
+            <a href="https://github.com/Nmuhra/media-player"
+              >Check out the code!</a
+            >
+          </div>
+          <div>
+            <i class="fa-solid fa-download"></i>
+            <h2>YT Downloader</h2>
+            <p>
+              This Python script enables users to download YouTube videos
+              effortlessly. By utilizing the Pytube library, the script provides
+              a straightforward interface to download videos either in MP3 or
+              MP4 format.
+            </p>
+            <a href="https://github.com/Nmuhra/youtube">Check out the code!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---------------------Contact------------------------>
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i> Nabeghmuhra1@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i> 0603401879</p>
+            <br /><br />
+            <div class="social-icons">
+              <a href="https://www.instagram.com/nabegh_muhra/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://github.com/Nmuhra"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/nabegh-muhra-222446252/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+            <a href="images/Nabegh Muhra -CV.pdf" download="" class="btn btn"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Name"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © Nabegh Muhra 2024</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
