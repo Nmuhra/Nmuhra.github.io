@@ -2,7 +2,6 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
-
 * {
   margin: 0;
   padding: 0;
@@ -10,15 +9,10 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background:
-    repeating-linear-gradient(
-      135deg,
-      #faf8ff,
-      #faf8ff 18px,
-      #ebebf5 18px,
-      #ebebf5 19px
-    );
-  background-size: 200px 200px;
+  background-color: #efefef;
+  background-image: 
+    repeating-linear-gradient(135deg, #efefef, #efefef 18px, #e2e2e2 18px, #e2e2e2 19px),
+    repeating-linear-gradient(45deg, #efefef, #efefef 18px, #e2e2e2 18px, #e2e2e2 19px);
 }
 
 html {

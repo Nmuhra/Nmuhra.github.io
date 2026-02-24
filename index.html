@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -58,7 +58,10 @@
           >
             Download CV
           </button>
-          <button class="btn btn-color-2" onclick="location.href='./#contact'">
+          <button
+            class="btn btn-color-2"
+            onclick="location.href = './#contact'"
+          >
             Contact Info
           </button>
         </div>
@@ -67,13 +70,13 @@
             src="./assets/linkedin.png"
             alt="My LinkedIn profile"
             class="icon"
-            onclick="location.href='http://linkedin.com/in/nabeghmuhra/'"
+            onclick="location.href = 'http://linkedin.com/in/nabeghmuhra/'"
           />
           <img
             src="./assets/github.png"
             alt="My Github profile"
             class="icon"
-            onclick="location.href='https://github.com/'"
+            onclick="location.href = 'https://github.com/'"
           />
         </div>
       </div>
@@ -129,7 +132,7 @@
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#experience'"
+        onclick="location.href = './#experience'"
       />
     </section>
 
@@ -150,12 +153,12 @@
                     <div class="job-title">Junior Software Developer</div>
                     <div class="company">SmartMob</div>
                   </div>
-                  <div class="date">Jan 2025 - Present</div>
+                  <div class="date">Jan 2025 - Feb 2026</div>
                 </div>
                 <p class="description">
-                  Developing and supporting progressive web apps and mobile
+                  Developed and supported progressive web apps and mobile
                   applications using Angular, Ionic, and Node.js, leveraging
-                  Capacitor for cross-platform functionality. Collaborating on
+                  Capacitor for cross-platform functionality. Collaborated on
                   full-stack development projects, applying problem-solving and
                   strategic thinking to deliver user-focused solutions.
                 </p>
@@ -167,13 +170,29 @@
                     <div class="job-title">Academic Tutor</div>
                     <div class="company">University of Pretoria</div>
                   </div>
-                  <div class="date">Feb 2025 - Present</div>
+                  <div class="date">Feb 2025 - Nov 2025</div>
                 </div>
                 <p class="description">
                   Tutored first-year students in foundational programming and
                   information systems courses, delivering engaging practical
                   sessions, providing hands-on support with practical
                   assignments, and evaluating coursework.
+                </p>
+              </div>
+
+              <div class="experience-item">
+                <div class="experience-header">
+                  <div>
+                    <div class="job-title">Academic Tutor</div>
+                    <div class="company">University of Pretoria</div>
+                  </div>
+                  <div class="date">Feb 2026 - Jun 2026</div>
+                </div>
+                <p class="description">
+                  Tutoring second-year Informatics students in INF 264, a module
+                  focused on Microsoft Excel, covering data analysis, formulas,
+                  and spreadsheet design, providing hands-on support during
+                  practical sessions and evaluating coursework.
                 </p>
               </div>
             </div>
@@ -193,7 +212,7 @@
                     </div>
                     <div class="company">University of Pretoria</div>
                   </div>
-                  <div class="date">Feb 2023 - Present</div>
+                  <div class="date">Feb 2023 - Nov 2025</div>
                 </div>
               </div>
 
@@ -360,20 +379,19 @@
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#projects'"
+        onclick="location.href = './#projects'"
       />
     </section>
 
     <!-- PROJECTS SECTION -->
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Capstone Project</h1>
+      <h1 class="title">Projects</h1>
 
       <div class="experience-details-container">
-        <div class="about-containers">
+        <div class="about-containers projects-grid">
           <div class="details-container color-container">
             <h2 class="experience-sub-title project-title">Portfolio Portal</h2>
-
             <p
               style="
                 text-align: center;
@@ -386,7 +404,6 @@
               template selection, dynamic content parsing, and a deployed live
               preview environment.
             </p>
-
             <div class="article-container">
               <img
                 src="./assets/capstone.jpeg"
@@ -397,9 +414,43 @@
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/COS301-SE-2025/Portfolio-Portal'"
+                onclick="
+                  location.href =
+                    'https://github.com/COS301-SE-2025/Portfolio-Portal'
+                "
               >
                 Github
+              </button>
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <h2 class="experience-sub-title project-title">PetPaws</h2>
+            <span class="coming-soon-badge">Coming Soon</span>
+            <p
+              style="
+                text-align: center;
+                margin: 1rem 2rem;
+                color: rgb(85, 85, 85);
+              "
+            >
+              A pet-sitting website connecting pet owners with trusted sitters.
+              Designed to make booking pet care simple, safe, and stress-free
+              for both owners and sitters.
+            </p>
+
+            <div class="article-container">
+              <div class="project-placeholder">
+                <img
+                  src="./assets/pets.jpeg"
+                  alt="PetPaws"
+                  class="project-img"
+                />
+              </div>
+            </div>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" disabled>
+                In Progress
               </button>
             </div>
           </div>
@@ -410,7 +461,7 @@
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#contact'"
+        onclick="location.href = './#contact'"
       />
     </section>
 
